@@ -47,3 +47,42 @@ array en la consola.
  */
 let nombres = simpsons.map(simpson => simpson.nombre);
 console.log(nombres);
+/**
+ 4.Utilizar el método map y destructuring para crear un nuevo array a partir del array
+del Ejercicio 1, en el cual el rol de los personajes menores de edad sea cambiado a
+"Estudiante". Mostrar el nuevo array en la consola.
+ */
+/**
+ 5.Crear un nuevo array de objetos con más personajes de Los Simpsons. Utilizar el
+operador spread para combinar ambos arrays de personajes en un nuevo array.
+Mostrar el array resultante en la consola.
+ */
+const amigosSimpsons = [
+    { 
+        nombre: "Ned", 
+        edad: 35, 
+        rol: "Vecino" 
+    },
+    { 
+        nombre: "Ralph", 
+        edad: 8, 
+        rol: "Compañero de clase" 
+    },
+    { 
+        nombre: "Milhouse",
+        edad: 10, 
+        rol: "Amigo" 
+    },
+    { 
+        nombre: "Nelson",
+        edad: 12, 
+        rol: "Bravucón" 
+    },
+    { 
+        nombre: "Martin", 
+        edad: 10, 
+        rol: "Compañero de clase" 
+    }
+]
+const personajesSimpsons = [...simpsons,...amigosSimpsons]
+console.log(personajesSimpsons);
