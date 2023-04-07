@@ -40,3 +40,10 @@ creado en el Ejercicio 1. Mostrar el resultado en la consola.
  */
 let totalEdades = simpsons.reduce((suma,simpson) => suma + simpson.edad,0);
 console.log(totalEdades);
+/**
+ 3.Utilizar el método map y una función arrow para crear un nuevo array que contenga
+solamente los nombres de los personajes del array del Ejercicio 1. Mostrar el nuevo
+array en la consola.
+ */
+let nombres = simpsons.map(simpson => simpson.nombre);
+console.log(nombres);
