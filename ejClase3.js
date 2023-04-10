@@ -52,6 +52,14 @@ console.log(nombres);
 del Ejercicio 1, en el cual el rol de los personajes menores de edad sea cambiado a
 "Estudiante". Mostrar el nuevo array en la consola.
  */
+const cambioRolMenores = simpsons.map(miembro => {
+    const {edad, rol} = miembro;
+    return {
+        ...miembro,
+        rol: edad < 18 ? "Estudiante": rol
+    };
+});
+console.log(cambioRolMenores);
 /**
  5.Crear un nuevo array de objetos con más personajes de Los Simpsons. Utilizar el
 operador spread para combinar ambos arrays de personajes en un nuevo array.
